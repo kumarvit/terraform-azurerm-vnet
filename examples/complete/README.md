@@ -8,7 +8,8 @@ Following example to create a virtual network with subnets, NSG, DDoS protection
 
 ```hcl
 module "vnet" {
-  source  = "github.com/tietoevry-infra-as-code/terraform-azurerm-vnet?ref=v2.0.0"
+  source  = "kumarvna/vnet/azurerm"
+  version = "2.0.0"
 
   # By default, this module will not create a resource group, proivde the name here
   # to use an existing resource group, specify the existing resource group name,
